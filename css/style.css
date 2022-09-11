@@ -139,6 +139,7 @@ body {
   padding: 0;
   font-family: "Outfit", sans-serif;
   background-color: hsl(217deg, 54%, 11%);
+  overflow: hidden;
 }
 
 .container {
