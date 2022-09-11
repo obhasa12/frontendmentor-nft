@@ -1,0 +1,150 @@
+.object {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.25rem;
+  width: 20.4375rem;
+  height: 33.9375rem;
+  background-color: hsl(216deg, 50%, 16%);
+}
+.object__image {
+  position: relative;
+  margin: 1.5rem auto;
+  border: 1px solid black;
+  width: 17.375rem;
+  height: 17.375rem;
+  border-radius: 0.5rem;
+  background-image: url(../images/image-equilibrium.jpg);
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+}
+.object__image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 247, 0.45);
+  background-image: url(../images/icon-view.svg);
+  background-position: center;
+  background-size: 3rem 3rem;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+.object__image:hover::before {
+  opacity: 1;
+}
+.object__text {
+  margin: 0 1.46875rem;
+}
+.object__title {
+  margin-bottom: 0.75rem;
+  font-size: 1.3125rem;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 100%);
+  transition: color 150ms ease-in-out;
+  cursor: pointer;
+}
+.object__title:hover {
+  color: rgb(0, 255, 247);
+}
+.object__description {
+  margin-bottom: 1.125rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.625rem;
+  color: hsl(215deg, 51%, 70%);
+}
+.object__information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px hsl(215deg, 32%, 27%) solid;
+}
+.object__eth {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.object__ethimage {
+  background-image: url(../images/icon-ethereum.svg);
+  background-size: cover;
+  width: 0.75rem;
+  height: 1.375rem;
+}
+.object__ethtext {
+  position: absolute;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  width: 6.25rem;
+  left: 1.3125rem;
+  color: rgb(0, 255, 247);
+}
+.object__days {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.object__imgdays {
+  position: absolute;
+  right: 4.8125rem;
+  background-image: url(../images/icon-clock.svg);
+  background-size: cover;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+.object__textdays {
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(215deg, 51%, 70%);
+}
+.object__author {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.object__user {
+  background-image: url(../images/image-avatar.png);
+  background-size: cover;
+  width: 2.0625rem;
+  height: 2.0625rem;
+}
+.object__username {
+  position: absolute;
+  font-size: 1rem;
+  color: hsl(0deg, 0%, 100%);
+  left: 3.25rem;
+  line-height: 2.0625rem;
+  transition: color 150ms ease-in-out;
+  cursor: pointer;
+}
+.object__username:hover {
+  color: rgb(0, 255, 247);
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217deg, 54%, 11%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px black solid;
+  height: 100vh;
+}/*# sourceMappingURL=style.css.map */
